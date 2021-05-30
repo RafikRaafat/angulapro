@@ -1,0 +1,23 @@
+<p>Contact List Page</p>
+
+<input type="button" value="Add Contact" routerLink="/Contact/add" class="btn btn-primary">
+
+<table class="table" border="1">
+    <thead>
+        <tr>
+            
+            <th>Client Name</th>
+            <th>Phone Number</th>
+            <th>Edit </th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of alldata">
+            <td>{{item.name}}</td>
+            <td>{{item.mobNumber}}</td>
+            <td>  <input type="button" value="Edit" routerLink="/Contact/edit/{{item.id}}"> </td>
+            <td>  <input type="button" value="Delte" routerLink="/Contact/delete/{{item.id}}"> </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,11 @@
+<p>Edit Contact </p>
+<form #myforma1="ngForm" (ngSubmit)="mysave()">
+
+    <label>Client Name : </label>
+    <input type="text" name="Name" [(ngModel)]="obj.Name" >
+
+    <label>Phone Number : </label>
+    <input type="text" name="MobNumber" [(ngModel)]="obj.MobNumber" >
+
+    <input type="submit" value="Add">
+</form>

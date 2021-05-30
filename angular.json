@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angulapro"
+    }
+  },
+  "defaultProject": "angulapro",
+  "cli": {
+    "analytics": "3b9701b7-cda0-417a-ad00-f061c364481b"
+  }
 }
